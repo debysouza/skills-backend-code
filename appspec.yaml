@@ -1,0 +1,9 @@
+version: 1
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "CodePipelineDefault"
+        LoadBalancerInfo:
+          ContainerName: "skills-ecs-cluster"
+          ContainerPort: 8080
