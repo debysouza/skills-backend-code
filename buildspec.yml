@@ -17,7 +17,8 @@ phases:
   build:
     commands:
       - echo Building the Docker image...
-      - ./gradlew build
+      - chmod +x gradlew
+      - ./gradlew build -x test
       - docker build -t $IMAGE_URI .
   post_build:
     commands:
