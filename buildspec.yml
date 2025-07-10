@@ -17,7 +17,6 @@ phases:
   build:
     commands:
       - echo Building the Docker image...
-      - mvn clean package -DskipTests
       - ./gradlew build -x test
       - docker build -t $IMAGE_URI .
   post_build:
