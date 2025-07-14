@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    IMAGE_REPO_NAME: backend
+    IMAGE_REPO_NAME: skills-backend-repo
     IMAGE_TAG: latest
     AWS_REGION: us-east-1
     ECR_URI: 557825993708.dkr.ecr.us-east-1.amazonaws.com
