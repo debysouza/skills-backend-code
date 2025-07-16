@@ -20,6 +20,7 @@ phases:
       - chmod +x gradlew
       - ./gradlew build -x test
       - ls -lh build/libs
+      - cp build/libs/*.jar .
       - echo Building the Docker image...
       - docker build -t $IMAGE_URI .
   post_build:
